@@ -79,6 +79,7 @@ flowchart LR
 │   ├── 02_baseline_comparison.ipynb                   # Plain dense bi-encoder baseline (no custom attention)
 │   └── 03_evaluation_full_corpus.ipynb                # FAISS-based Recall@K / MRR evaluation
 └── README.md
+└── reqi=uirements.txt
 ```
  
 ---
