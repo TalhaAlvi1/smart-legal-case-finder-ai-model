@@ -53,8 +53,7 @@ flowchart LR
 ---
 
 ## 📊 Results
-
-![Results Comparison](assets/results_comparison.png)
+<img width="1200" height="750" alt="image" src="https://github.com/user-attachments/assets/a0167240-2698-41fd-ab6e-deb4cb190b40" />
 
 | Setup | Recall@50 | Recall@100 | Recall@500 |
 |---|---|---|---|
@@ -73,16 +72,15 @@ flowchart LR
 ---
 
 ## 📁 Project Structure
-
+ 
 ```
 ├── notebooks/
-│   ├── biencoder_training.ipynb        # Main training loop (concept + citation attention)
-│   ├── biencoder_evaluation.ipynb      # Recall@K / MRR evaluation + hybrid BM25 fusion
-│   └── biencoder_train_corpus_eval.ipynb
-├── requirements.txt
+│   ├── 01_training_concept_citation_attention.ipynb   # Main training loop (concept + citation attention)
+│   ├── 02_baseline_comparison.ipynb                   # Plain dense bi-encoder baseline (no custom attention)
+│   └── 03_evaluation_full_corpus.ipynb                # FAISS-based Recall@K / MRR evaluation
 └── README.md
 ```
-
+ 
 ---
 
 ## ⚙️ Installation
