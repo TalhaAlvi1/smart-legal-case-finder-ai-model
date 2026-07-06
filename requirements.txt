@@ -1,0 +1,7 @@
+transformers
+datasets
+faiss-cpu
+pandas
+numpy
+tqdm
+torch
