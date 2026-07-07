@@ -20,7 +20,7 @@ Inspired by the *LeCoPCR* paper (concept-guided prior case retrieval for the Eur
 - ⚡ **Contrastive Training** — 1 positive + 7 in-batch hard negatives per query, temperature-scaled cross-entropy loss.
 - 🔗 **Hybrid Retrieval** — dense embeddings fused with BM25 scores for improved recall.
 - 📈 **True Recall Evaluation** — Recall@50/100/500, MRR, and Hit-Rate metrics on the ECtHR-PCR benchmark.
-- 💻 **Kaggle T4-Optimized** — gradient checkpointing, FP16, gradient accumulation, and resumable checkpointing to fit training within Kaggle's 10-hour GPU session limit.
+- 💻 **Kaggle T4-Optimized** — gradient checkpointing, FP16, gradient accumulation, and resumable checkpointing.
 
 ---
 
@@ -61,7 +61,7 @@ flowchart LR
 | **Hybrid BM25 + Dense (ours)** | **~21.5%** | **~28.0%** | **~55.0%** |
 | Paper baseline (Longformer, 4096 tokens) | 23.98% | 33.97% | 63.41% |
 
-> Trained under a hard 1024-token sequence length constraint (vs. the paper's 4096) due to Kaggle T4 10-hour session limits — the gap to the paper's numbers is largely attributable to truncation, not model quality. A separate evaluation against train queries + full corpus reached **44.12% Recall@100**.
+> Trained under a hard 1024-token sequence length constraint (vs. the paper's 4096) due to Kaggle T4 session limits — the gap to the paper's numbers is largely attributable to truncation, not model quality.
 
 ---
 
